@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BD Offer - Internet & Minute Offers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">BD<span>Offer</span></a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <nav id="navMenu">
+        <a href="#home">হোম</a>
+        <a href="#offers">অফার</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">সেরা মোবাইল অফার এক জায়গায়</p>
+          <h1>আপনার পছন্দের <span>ইন্টারনেট ও মিনিট অফার</span></h1>
+          <p class="hero-text">সহজে অফার খুঁজুন, পছন্দ করুন এবং অর্ডারের জন্য যোগাযোগ করুন।</p>
+          <a class="btn" href="#offers">অফার দেখুন</a>
+        </div>
+        <div class="hero-card">
+          <div class="signal">📶</div>
+          <h3>আজকের জনপ্রিয় অফার</h3>
+          <p>ডাটা, মিনিট ও কম্বো প্যাক</p>
+          <strong>সাশ্রয়ী দামে</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers section" id="offers">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">আমাদের অফার</p>
+          <h2>আপনার প্রয়োজন অনুযায়ী বেছে নিন</h2>
+          <p>অপারেটর বা অফারের ধরন অনুযায়ী ফিল্টার করুন।</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter active" data-filter="all">সব অফার</button>
+          <button class="filter" data-filter="internet">ইন্টারনেট</button>
+          <button class="filter" data-filter="minute">মিনিট</button>
+          <button class="filter" data-filter="combo">কম্বো</button>
+        </div>
+
+        <div class="offer-grid" id="offerGrid">
+          <article class="offer-card" data-type="internet">
+            <div class="tag">ইন্টারনেট</div>
+            <h3>10 GB Internet</h3>
+            <p class="validity">মেয়াদ: ৩০ দিন</p>
+            <div class="price">৳১৯৯</div>
+            <button class="order-btn" data-offer="10 GB Internet - ৳১৯৯">অর্ডার করুন</button>
+          </article>
+
+          <article class="offer-card" data-type="internet">
+            <div class="tag">ইন্টারনেট</div>
+            <h3>5 GB Internet</h3>
+            <p class="validity">মেয়াদ: ৭ দিন</p>
+            <div class="price">৳৯৯</div>
+            <button class="order-btn" data-offer="5 GB Internet - ৳৯৯">অর্ডার করুন</button>
+          </article>
+
+          <article class="offer-card" data-type="minute">
+            <div class="tag">মিনিট</div>
+            <h3>500 মিনিট</h3>
+            <p class="validity">মেয়াদ: ৩০ দিন</p>
+            <div class="price">৳২৯৯</div>
+            <button class="order-btn" data-offer="500 মিনিট - ৳২৯৯">অর্ডার করুন</button>
+          </article>
+
+          <article class="offer-card" data-type="minute">
+            <div class="tag">মিনিট</div>
+            <h3>200 মিনিট</h3>
+            <p class="validity">মেয়াদ: ১৫ দিন</p>
+            <div class="price">৳১৪৯</div>
+            <button class="order-btn" data-offer="200 মিনিট - ৳১৪৯">অর্ডার করুন</button>
+          </article>
+
+          <article class="offer-card" data-type="combo">
+            <div class="tag">কম্বো</div>
+            <h3>10 GB + 300 মিনিট</h3>
+            <p class="validity">মেয়াদ: ৩০ দিন</p>
+            <div class="price">৳৩৯৯</div>
+            <button class="order-btn" data-offer="10 GB + 300 মিনিট - ৳৩৯৯">অর্ডার করুন</button>
+          </article>
+
+          <article class="offer-card" data-type="combo">
+            <div class="tag">কম্বো</div>
+            <h3>5 GB + 100 মিনিট</h3>
+            <p class="validity">মেয়াদ: ১৫ দিন</p>
+            <div class="price">৳১৯৯</div>
+            <button class="order-btn" data-offer="5 GB + 100 মিনিট - ৳১৯৯">অর্ডার করুন</button>
+          </article>
+        </div>
+        <p class="notice">নোট: এগুলো demo offer। নিজের প্রকৃত অফার, দাম ও অর্ডার নম্বর দিয়ে পরিবর্তন করতে হবে।</p>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about-box">
+        <h2>কেন BD Offer?</h2>
+        <div class="features">
+          <div><b>⚡ দ্রুত</b><p>সহজে অফার খুঁজে নিন।</p></div>
+          <div><b>💰 সাশ্রয়ী</b><p>আপনার বাজেট অনুযায়ী প্যাক বেছে নিন।</p></div>
+          <div><b>📱 মোবাইল ফ্রেন্ডলি</b><p>সব ডিভাইসে সুন্দরভাবে ব্যবহার করুন।</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-box">
+        <h2>যোগাযোগ করুন</h2>
+        <p>অর্ডার করতে নিচের বাটনে ক্লিক করুন।</p>
+        <a class="btn" href="https://wa.me/8801000000000" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 BD Offer. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
