@@ -1,34 +1,93 @@
-const menuBtn = document.getElementById('menuBtn');
-const navMenu = document.getElementById('navMenu');
+document.addEventListener("DOMContentLoaded", function () {
 
-menuBtn.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
+  // =========================
+  // Smooth scroll
+  // =========================
+  document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      const targetId = this.getAttribute("href");
 
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', () => navMenu.classList.remove('show'));
-});
+      if (targetId && targetId !== "#") {
+        const target = document.querySelector(targetId);
 
-const filters = document.querySelectorAll('.filter');
-const cards = document.querySelectorAll('.offer-card');
+        if (target) {
+          e.preventDefault();
 
-filters.forEach(filter => {
-  filter.addEventListener('click', () => {
-    filters.forEach(item => item.classList.remove('active'));
-    filter.classList.add('active');
-
-    const type = filter.dataset.filter;
-    cards.forEach(card => {
-      card.style.display = type === 'all' || card.dataset.type === type ? 'block' : 'none';
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      }
     });
   });
-});
 
-document.querySelectorAll('.order-btn').forEach(button => {
-  button.addEventListener('click', () => {
-    const offer = button.dataset.offer;
-    const phone = '8801000000000'; // এখানে নিজের WhatsApp নম্বর দিন
-    const message = encodeURIComponent('আমি এই অফারটি নিতে চাই: ' + offer);
-    window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+
+  // =========================
+  // Offer button click
+  // =========================
+  document.querySelectorAll(".buy-btn").forEach(function (button) {
+
+    button.addEventListener("click", function () {
+
+      const card = this.closest(".offer-card");
+
+      if (!card) return;
+
+      const offerName = card.querySelector("h3")
+        ? card.querySelector("h3").innerText
+        : "Offer";
+
+      const price = card.querySelector(".price strong")
+        ? card.querySelector(".price strong").innerText
+        : "";
+
+      const message =
+        "আসসালামু আলাইকুম। আমি এই অফারটি নিতে চাই:%0A%0A" +
+        "📦 অফার: " + offerName + "%0A" +
+        "💰 মূল্য: " + price + "%0A%0A" +
+        "দয়া করে অর্ডারটি প্রসেস করে দিন।";
+
+      // এখানে পরে তোমার আসল WhatsApp নম্বর বসাবো
+      const whatsappNumber = "8801000000000";
+
+      const whatsappURL =
+        "https://wa.me/" + whatsappNumber + "?text=" + message;
+
+      window.open(whatsappURL, "_blank");
+    });
+
   });
+
+
+  // =========================
+  // Operator card click
+  // =========================
+  document.querySelectorAll(".operator-card").forEach(function (card) {
+
+    card.addEventListener("click", function () {
+
+      const targetSection = document.querySelector("#internet");
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+
+    });
+
+  });
+
+
+  // =========================
+  // Current year
+  // =========================
+  const yearElement = document.querySelector("#year");
+
+  if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+  }
+
 });
