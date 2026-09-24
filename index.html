@@ -9,10 +9,6 @@
 
 <style>
 
-/* =========================
-   RESET
-========================= */
-
 *{
     box-sizing:border-box;
     margin:0;
@@ -24,11 +20,7 @@ html{
 }
 
 body{
-    font-family:
-        "Noto Sans Bengali",
-        "Arial",
-        sans-serif;
-
+    font-family:"Noto Sans Bengali","Arial",sans-serif;
     min-height:100vh;
 
     background:
@@ -41,15 +33,9 @@ body{
     color:#111;
 }
 
-
-/* =========================
-   OUTER AREA
-========================= */
-
 .page{
     width:100%;
     min-height:100vh;
-
     padding:18px 10px 35px;
 
     display:flex;
@@ -57,13 +43,7 @@ body{
     align-items:flex-start;
 }
 
-
-/* =========================
-   MOBILE STYLE MAIN PANEL
-========================= */
-
 .mobile-panel{
-
     width:100%;
     max-width:470px;
 
@@ -75,7 +55,6 @@ body{
         );
 
     border-radius:30px;
-
     border:5px solid rgba(255,255,255,.85);
 
     box-shadow:
@@ -83,17 +62,10 @@ body{
         inset 0 0 0 1px rgba(0,0,0,.08);
 
     overflow:hidden;
-
     padding:10px;
 }
 
-
-/* =========================
-   TOP TITLE
-========================= */
-
 .top-title{
-
     text-align:center;
 
     background:
@@ -104,9 +76,7 @@ body{
         );
 
     color:white;
-
     border-radius:17px;
-
     border:3px solid #b5fff6;
 
     box-shadow:
@@ -114,9 +84,7 @@ body{
         inset 0 2px 4px rgba(255,255,255,.45);
 
     padding:10px 8px;
-
     font-size:22px;
-
     font-weight:900;
 
     text-shadow:
@@ -127,15 +95,8 @@ body{
     color:#eaff00;
 }
 
-
-/* =========================
-   SUB TITLE
-========================= */
-
 .sub-title{
-
     margin-top:9px;
-
     text-align:center;
 
     background:
@@ -146,34 +107,22 @@ body{
         );
 
     border-radius:16px;
-
     border:2px solid white;
 
     padding:12px 10px;
 
     font-size:15px;
-
     line-height:1.55;
-
     font-weight:700;
-
     color:#222;
 
     box-shadow:
         0 3px 12px rgba(0,0,0,.12);
 }
 
-
-/* =========================
-   COUNTDOWN
-========================= */
-
 .timer-box{
-
     width:245px;
-
     margin:13px auto 10px;
-
     padding:9px 8px;
 
     background:
@@ -184,7 +133,6 @@ body{
         );
 
     border-radius:17px;
-
     border:4px solid #202f39;
 
     box-shadow:
@@ -192,16 +140,12 @@ body{
         inset 0 2px 5px rgba(255,255,255,.30);
 
     display:flex;
-
     justify-content:center;
-
     gap:5px;
 }
 
 .time-item{
-
     width:65px;
-
     text-align:center;
 
     background:
@@ -212,64 +156,41 @@ body{
         );
 
     border-radius:10px;
-
     padding:4px 2px;
 
     border:1px solid rgba(255,255,255,.35);
 }
 
 .time-number{
-
     display:block;
-
     color:#fff4a0;
-
     font-size:21px;
-
     line-height:23px;
-
     font-weight:900;
 }
 
 .time-label{
-
     display:block;
-
     color:white;
-
     font-size:7px;
-
     letter-spacing:.5px;
-
     font-weight:800;
 }
 
 .time-colon{
-
     color:#fff;
-
     font-size:22px;
-
     font-weight:900;
 
     display:flex;
-
     align-items:center;
 }
 
-
-/* =========================
-   SECTION TITLE
-========================= */
-
 .section-title{
-
     text-align:center;
-
     color:#08d744;
 
     font-size:20px;
-
     font-weight:900;
 
     margin:12px 0 8px;
@@ -278,51 +199,31 @@ body{
         0 1px 0 white;
 }
 
-
-/* =========================
-   OFFER LIST
-========================= */
-
 .offer-list{
-
     display:flex;
-
     flex-direction:column;
-
     gap:9px;
 }
 
-
-/* =========================
-   OFFER CARD
-========================= */
-
 .offer-card{
-
     position:relative;
 
     width:100%;
-
     min-height:55px;
 
     border-radius:17px;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     padding:9px 58px 9px 14px;
 
     text-decoration:none;
-
     color:white;
 
     font-size:17px;
-
     font-weight:900;
-
     line-height:1.25;
 
     border:3px solid rgba(255,255,255,.55);
@@ -342,11 +243,9 @@ body{
 }
 
 .offer-card::before{
-
     content:"";
 
     position:absolute;
-
     left:0;
     top:0;
 
@@ -363,7 +262,6 @@ body{
 }
 
 .offer-card:hover{
-
     transform:translateY(-2px) scale(1.01);
 
     box-shadow:
@@ -372,21 +270,13 @@ body{
 }
 
 .offer-card:active{
-
     transform:scale(.98);
 }
 
-
-/* =========================
-   OFFER BADGE
-========================= */
-
 .badge{
-
     position:absolute;
 
     right:7px;
-
     top:50%;
 
     transform:translateY(-50%);
@@ -411,9 +301,7 @@ body{
     color:white;
 
     font-size:10px;
-
     line-height:12px;
-
     font-weight:900;
 
     box-shadow:
@@ -422,15 +310,7 @@ body{
     z-index:2;
 }
 
-
-/* =========================
-   OPERATOR COLORS
-========================= */
-
-/* BANGLALINK */
-
 .banglalink{
-
     background:
         linear-gradient(
             180deg,
@@ -439,11 +319,7 @@ body{
         );
 }
 
-
-/* GRAMEENPHONE */
-
 .grameenphone{
-
     background:
         linear-gradient(
             180deg,
@@ -452,11 +328,7 @@ body{
         );
 }
 
-
-/* ROBI */
-
 .robi{
-
     background:
         linear-gradient(
             180deg,
@@ -465,11 +337,7 @@ body{
         );
 }
 
-
-/* AIRTEL */
-
 .airtel{
-
     background:
         linear-gradient(
             180deg,
@@ -478,13 +346,7 @@ body{
         );
 }
 
-
-/* =========================
-   MINUTE COLORS
-========================= */
-
 .minute-bl{
-
     background:
         linear-gradient(
             180deg,
@@ -494,7 +356,6 @@ body{
 }
 
 .minute-gp{
-
     background:
         linear-gradient(
             180deg,
@@ -504,7 +365,6 @@ body{
 }
 
 .minute-robi{
-
     background:
         linear-gradient(
             180deg,
@@ -514,7 +374,6 @@ body{
 }
 
 .minute-airtel{
-
     background:
         linear-gradient(
             180deg,
@@ -523,42 +382,19 @@ body{
         );
 }
 
-
-/* =========================
-   SMALL NOTE
-========================= */
-
 .note{
-
     text-align:center;
-
     color:#555;
-
     font-size:11px;
-
     margin-top:9px;
 }
 
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer{
-
     text-align:center;
-
     color:#777;
-
     font-size:11px;
-
     padding:18px 5px 6px;
 }
-
-
-/* =========================
-   MOBILE
-========================= */
 
 @media(max-width:500px){
 
@@ -567,13 +403,9 @@ body{
     }
 
     .mobile-panel{
-
         max-width:100%;
-
         border-radius:24px;
-
         border-width:4px;
-
         padding:8px;
     }
 
@@ -586,23 +418,14 @@ body{
     }
 
     .offer-card{
-
         min-height:54px;
-
         font-size:16px;
-
         border-radius:16px;
 
         padding-left:10px;
         padding-right:55px;
     }
-
 }
-
-
-/* =========================
-   VERY SMALL MOBILE
-========================= */
 
 @media(max-width:350px){
 
@@ -625,7 +448,6 @@ body{
     .time-item{
         width:58px;
     }
-
 }
 
 </style>
@@ -634,35 +456,20 @@ body{
 
 <body>
 
-
 <div class="page">
-
 
 <div class="mobile-panel">
 
-
-<!-- =========================
-     TOP
-========================= -->
-
 <div class="top-title">
-
     🎁 <span>GP - BL</span> এক্সক্লুসিভ ডিল
-
 </div>
 
 
 <div class="sub-title">
-
-    📱 অফারটি পেতে আপনার মোবাইল নম্বর লিখুন<br>
-    এবং প্রাপ্ত অফার পেজে গিয়ে কিনুন।
-
+    📱 আপনার পছন্দের অফারটি নিচ থেকে নির্বাচন করুন<br>
+    এবং সরাসরি অফার পেজে গিয়ে কিনুন।
 </div>
 
-
-<!-- =========================
-     COUNTDOWN
-========================= -->
 
 <div class="timer-box">
 
@@ -688,28 +495,20 @@ body{
 </div>
 
 
-<!-- =========================
-     INTERNET TITLE
-========================= -->
-
 <div class="section-title">
-
     সকল ইন্টারনেট অফার
-
 </div>
 
-
-<!-- =========================
-     INTERNET OFFERS
-========================= -->
 
 <div class="offer-list">
 
 
-<!-- BANGLALINK -->
+<!-- BANGLALINK 25GB -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card banglalink"
 >
 
@@ -722,10 +521,10 @@ body{
 </a>
 
 
-<!-- GP - DIRECT LINK -->
+<!-- GP 25GB -->
 
 <a
-    href="https://allsim.bdoffer.online/?utm_medium=80389e0de6abd8f7857707ae998817b2176978b3&utm_campaign=sdfghfd&cid=sdfgers"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
     target="_blank"
     rel="noopener noreferrer"
     class="offer-card grameenphone"
@@ -740,10 +539,12 @@ body{
 </a>
 
 
-<!-- ROBI -->
+<!-- ROBI 25GB -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card robi"
 >
 
@@ -756,10 +557,12 @@ body{
 </a>
 
 
-<!-- AIRTEL -->
+<!-- AIRTEL 25GB -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card airtel"
 >
 
@@ -775,28 +578,20 @@ body{
 </div>
 
 
-<!-- =========================
-     MINUTE TITLE
-========================= -->
-
 <div class="section-title">
-
     সকল মিনিট অফার
-
 </div>
 
-
-<!-- =========================
-     MINUTE OFFERS
-========================= -->
 
 <div class="offer-list">
 
 
-<!-- BANGLALINK MINUTE -->
+<!-- BANGLALINK 200 MINUTES -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card minute-bl"
 >
 
@@ -809,10 +604,12 @@ body{
 </a>
 
 
-<!-- GP MINUTE -->
+<!-- GP 200 MINUTES -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card minute-gp"
 >
 
@@ -825,10 +622,12 @@ body{
 </a>
 
 
-<!-- ROBI MINUTE -->
+<!-- ROBI 200 MINUTES -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card minute-robi"
 >
 
@@ -841,10 +640,12 @@ body{
 </a>
 
 
-<!-- AIRTEL MINUTE -->
+<!-- AIRTEL 200 MINUTES -->
 
 <a
-    href="#"
+    href="https://allsim.bdoffer.online/?utm_medium=8887d1b90dc15514599c33166b3697f5750b1c50&utm_campaign=sdfgsdfsdf"
+    target="_blank"
+    rel="noopener noreferrer"
     class="offer-card minute-airtel"
 >
 
@@ -861,83 +662,57 @@ body{
 
 
 <div class="note">
-
     প্রতিটি অফারে ক্লিক করে সংশ্লিষ্ট অফার পেজে যেতে পারবেন।
-
 </div>
 
 
 <div class="footer">
-
     © 2026 BD Offer
-
 </div>
 
 
 </div>
-
 </div>
 
 
 <script>
 
-/* =========================
-   COUNTDOWN
-========================= */
-
 let totalSeconds = (2 * 60) + 23;
-
 
 function updateTimer(){
 
     if(totalSeconds < 0){
-
         totalSeconds = 0;
-
     }
-
 
     const hours =
         Math.floor(totalSeconds / 3600);
 
-
     const minutes =
-        Math.floor(
-            (totalSeconds % 3600) / 60
-        );
-
+        Math.floor((totalSeconds % 3600) / 60);
 
     const seconds =
         totalSeconds % 60;
 
-
     document.getElementById("hours").textContent =
         String(hours).padStart(2,"0");
-
 
     document.getElementById("minutes").textContent =
         String(minutes).padStart(2,"0");
 
-
     document.getElementById("seconds").textContent =
         String(seconds).padStart(2,"0");
 
-
     if(totalSeconds > 0){
-
         totalSeconds--;
-
     }
-
 }
-
 
 updateTimer();
 
 setInterval(updateTimer,1000);
 
 </script>
-
 
 </body>
 </html>
