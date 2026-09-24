@@ -3,133 +3,450 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>BD Offer - Internet & Minute Offers</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header class="header">
     <div class="container nav">
-      <a class="logo" href="#">BD<span>Offer</span></a>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-      <nav id="navMenu">
+      <a href="#" class="logo">
+        <span>BD</span> Offer
+      </a>
+
+      <div class="nav-links">
         <a href="#home">হোম</a>
         <a href="#offers">অফার</a>
-        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#minutes">মিনিট</a>
         <a href="#contact">যোগাযোগ</a>
-      </nav>
+      </div>
     </div>
   </header>
 
-  <main>
-    <section class="hero" id="home">
-      <div class="container hero-content">
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-box">
+
+      <div class="hero-text">
+        <div class="small-title">🔥 আজকের সেরা অফার</div>
+
+        <h1>
+          আপনার পছন্দের
+          <span>ইন্টারনেট ও মিনিট</span>
+          অফার
+        </h1>
+
+        <p>
+          কম দামে প্রয়োজনীয় GB, মিনিট ও বান্ডেল অফার কিনুন।
+          আপনার পছন্দের অফারে ক্লিক করে অর্ডার করুন।
+        </p>
+
+        <a href="#offers" class="hero-btn">
+          অফার দেখুন ↓
+        </a>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-top">বিশেষ অফার</div>
+        <strong>25 GB</strong>
+        <span>ইন্টারনেট প্যাক</span>
+        <small>সীমিত সময়ের জন্য</small>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Operator Offers -->
+  <section class="section" id="offers">
+    <div class="container">
+
+      <div class="section-title">
+        <span>📱</span>
         <div>
-          <p class="eyebrow">সেরা মোবাইল অফার এক জায়গায়</p>
-          <h1>আপনার পছন্দের <span>ইন্টারনেট ও মিনিট অফার</span></h1>
-          <p class="hero-text">সহজে অফার খুঁজুন, পছন্দ করুন এবং অর্ডারের জন্য যোগাযোগ করুন।</p>
-          <a class="btn" href="#offers">অফার দেখুন</a>
-        </div>
-        <div class="hero-card">
-          <div class="signal">📶</div>
-          <h3>আজকের জনপ্রিয় অফার</h3>
-          <p>ডাটা, মিনিট ও কম্বো প্যাক</p>
-          <strong>সাশ্রয়ী দামে</strong>
+          <h2>ইন্টারনেট অফার</h2>
+          <p>আপনার অপারেটর নির্বাচন করুন</p>
         </div>
       </div>
-    </section>
 
-    <section class="offers section" id="offers">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">আমাদের অফার</p>
-          <h2>আপনার প্রয়োজন অনুযায়ী বেছে নিন</h2>
-          <p>অপারেটর বা অফারের ধরন অনুযায়ী ফিল্টার করুন।</p>
-        </div>
 
-        <div class="filters">
-          <button class="filter active" data-filter="all">সব অফার</button>
-          <button class="filter" data-filter="internet">ইন্টারনেট</button>
-          <button class="filter" data-filter="minute">মিনিট</button>
-          <button class="filter" data-filter="combo">কম্বো</button>
-        </div>
+      <div class="operator-grid">
 
-        <div class="offer-grid" id="offerGrid">
-          <article class="offer-card" data-type="internet">
-            <div class="tag">ইন্টারনেট</div>
-            <h3>10 GB Internet</h3>
-            <p class="validity">মেয়াদ: ৩০ দিন</p>
-            <div class="price">৳১৯৯</div>
-            <button class="order-btn" data-offer="10 GB Internet - ৳১৯৯">অর্ডার করুন</button>
-          </article>
+        <!-- Banglalink -->
+        <a href="#internet" class="operator-card banglalink">
+          <div class="operator-logo">BL</div>
+          <div>
+            <h3>Banglalink</h3>
+            <p>25 GB থেকে অফার</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
 
-          <article class="offer-card" data-type="internet">
-            <div class="tag">ইন্টারনেট</div>
-            <h3>5 GB Internet</h3>
-            <p class="validity">মেয়াদ: ৭ দিন</p>
-            <div class="price">৳৯৯</div>
-            <button class="order-btn" data-offer="5 GB Internet - ৳৯৯">অর্ডার করুন</button>
-          </article>
 
-          <article class="offer-card" data-type="minute">
-            <div class="tag">মিনিট</div>
-            <h3>500 মিনিট</h3>
-            <p class="validity">মেয়াদ: ৩০ দিন</p>
-            <div class="price">৳২৯৯</div>
-            <button class="order-btn" data-offer="500 মিনিট - ৳২৯৯">অর্ডার করুন</button>
-          </article>
+        <!-- Grameenphone -->
+        <a href="#internet" class="operator-card grameenphone">
+          <div class="operator-logo">GP</div>
+          <div>
+            <h3>Grameenphone</h3>
+            <p>25 GB থেকে অফার</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
 
-          <article class="offer-card" data-type="minute">
-            <div class="tag">মিনিট</div>
-            <h3>200 মিনিট</h3>
-            <p class="validity">মেয়াদ: ১৫ দিন</p>
-            <div class="price">৳১৪৯</div>
-            <button class="order-btn" data-offer="200 মিনিট - ৳১৪৯">অর্ডার করুন</button>
-          </article>
 
-          <article class="offer-card" data-type="combo">
-            <div class="tag">কম্বো</div>
-            <h3>10 GB + 300 মিনিট</h3>
-            <p class="validity">মেয়াদ: ৩০ দিন</p>
-            <div class="price">৳৩৯৯</div>
-            <button class="order-btn" data-offer="10 GB + 300 মিনিট - ৳৩৯৯">অর্ডার করুন</button>
-          </article>
+        <!-- Robi -->
+        <a href="#internet" class="operator-card robi">
+          <div class="operator-logo">R</div>
+          <div>
+            <h3>Robi</h3>
+            <p>25 GB থেকে অফার</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
 
-          <article class="offer-card" data-type="combo">
-            <div class="tag">কম্বো</div>
-            <h3>5 GB + 100 মিনিট</h3>
-            <p class="validity">মেয়াদ: ১৫ দিন</p>
-            <div class="price">৳১৯৯</div>
-            <button class="order-btn" data-offer="5 GB + 100 মিনিট - ৳১৯৯">অর্ডার করুন</button>
-          </article>
-        </div>
-        <p class="notice">নোট: এগুলো demo offer। নিজের প্রকৃত অফার, দাম ও অর্ডার নম্বর দিয়ে পরিবর্তন করতে হবে।</p>
+
+        <!-- Airtel -->
+        <a href="#internet" class="operator-card airtel">
+          <div class="operator-logo">A</div>
+          <div>
+            <h3>Airtel</h3>
+            <p>25 GB থেকে অফার</p>
+          </div>
+          <span class="arrow">›</span>
+        </a>
+
       </div>
-    </section>
 
-    <section class="about section" id="about">
-      <div class="container about-box">
-        <h2>কেন BD Offer?</h2>
-        <div class="features">
-          <div><b>⚡ দ্রুত</b><p>সহজে অফার খুঁজে নিন।</p></div>
-          <div><b>💰 সাশ্রয়ী</b><p>আপনার বাজেট অনুযায়ী প্যাক বেছে নিন।</p></div>
-          <div><b>📱 মোবাইল ফ্রেন্ডলি</b><p>সব ডিভাইসে সুন্দরভাবে ব্যবহার করুন।</p></div>
+    </div>
+  </section>
+
+
+  <!-- Internet Offers -->
+  <section class="section light-section" id="internet">
+    <div class="container">
+
+      <div class="section-title">
+        <span>🌐</span>
+        <div>
+          <h2>25 GB ইন্টারনেট অফার</h2>
+          <p>পছন্দের অফারে ক্লিক করে কিনুন</p>
         </div>
       </div>
-    </section>
 
-    <section class="contact section" id="contact">
-      <div class="container contact-box">
-        <h2>যোগাযোগ করুন</h2>
-        <p>অর্ডার করতে নিচের বাটনে ক্লিক করুন।</p>
-        <a class="btn" href="https://wa.me/8801000000000" target="_blank" rel="noopener">WhatsApp-এ যোগাযোগ</a>
+
+      <div class="offer-grid">
+
+        <!-- Offer 1 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag bl">Banglalink</span>
+            <span class="hot">🔥 জনপ্রিয়</span>
+          </div>
+
+          <h3>25 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 25 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 299</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Banglalink%2025GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <!-- Offer 2 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag gp">Grameenphone</span>
+            <span class="hot">🔥 জনপ্রিয়</span>
+          </div>
+
+          <h3>25 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 25 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 299</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Grameenphone%2025GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <!-- Offer 3 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag robi">Robi</span>
+            <span class="hot">🔥 জনপ্রিয়</span>
+          </div>
+
+          <h3>25 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 25 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 299</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Robi%2025GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <!-- Offer 4 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag airtel">Airtel</span>
+            <span class="hot">🔥 জনপ্রিয়</span>
+          </div>
+
+          <h3>25 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 25 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 299</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Airtel%2025GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <!-- Offer 5 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag bl">Banglalink</span>
+          </div>
+
+          <h3>30 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 30 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 349</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Banglalink%2030GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <!-- Offer 6 -->
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag gp">Grameenphone</span>
+          </div>
+
+          <h3>40 GB Internet</h3>
+
+          <div class="offer-info">
+            <span>📦 40 GB</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 399</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Grameenphone%2040GB%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
       </div>
-    </section>
-  </main>
 
+    </div>
+  </section>
+
+
+  <!-- Minute Offers -->
+  <section class="section" id="minutes">
+    <div class="container">
+
+      <div class="section-title">
+        <span>☎️</span>
+        <div>
+          <h2>সকল মিনিট অফার</h2>
+          <p>কম দামে মিনিট প্যাক কিনুন</p>
+        </div>
+      </div>
+
+
+      <div class="offer-grid">
+
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag bl">Banglalink</span>
+          </div>
+
+          <h3>500 মিনিট</h3>
+
+          <div class="offer-info">
+            <span>☎️ 500 মিনিট</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 199</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Banglalink%20500%20মিনিট%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag gp">Grameenphone</span>
+          </div>
+
+          <h3>600 মিনিট</h3>
+
+          <div class="offer-info">
+            <span>☎️ 600 মিনিট</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 249</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Grameenphone%20600%20মিনিট%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag robi">Robi</span>
+          </div>
+
+          <h3>500 মিনিট</h3>
+
+          <div class="offer-info">
+            <span>☎️ 500 মিনিট</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 199</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Robi%20500%20মিনিট%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+
+        <div class="offer-card">
+          <div class="offer-top">
+            <span class="tag airtel">Airtel</span>
+          </div>
+
+          <h3>700 মিনিট</h3>
+
+          <div class="offer-info">
+            <span>☎️ 700 মিনিট</span>
+            <span>📅 30 দিন</span>
+          </div>
+
+          <div class="price">
+            <strong>৳ 249</strong>
+          </div>
+
+          <a class="buy-btn"
+             href="https://wa.me/8801000000000?text=আমি%20Airtel%20700%20মিনিট%20অফারটি%20কিনতে%20চাই।"
+             target="_blank">
+            এখনই কিনুন →
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container contact-box">
+
+      <div>
+        <span class="small-title">💬 সাহায্য লাগলে</span>
+        <h2>WhatsApp-এ যোগাযোগ করুন</h2>
+        <p>
+          অফার কিনতে অথবা কোনো তথ্য জানতে আমাদের সাথে যোগাযোগ করুন।
+        </p>
+      </div>
+
+      <a href="https://wa.me/8801000000000"
+         target="_blank"
+         class="whatsapp-btn">
+        WhatsApp করুন
+      </a>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
   <footer>
-    <div class="container">© 2026 BD Offer. All rights reserved.</div>
+    <div class="container">
+      <p>© 2026 BD Offer — সকল অধিকার সংরক্ষিত</p>
+    </div>
   </footer>
 
+
   <script src="script.js"></script>
+
 </body>
 </html>
